@@ -11,3 +11,4 @@ logstash.conf.backup
 
 # Backup files
 *.bak
+README-task3-backup.md

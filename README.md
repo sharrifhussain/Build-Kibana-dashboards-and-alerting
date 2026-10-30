@@ -46,7 +46,7 @@ The failed login correlation logic was converted into Elasticsearch ES|QL and te
 
 The test identified 10 failed login events from source IP `192.168.1.25`, meeting the configured threshold of five events within five minutes.
 
-Note: This confirms the query logic against the available sample logs. It does not represent an automatically configured Kibana alert.
+Note: The query logic was initially tested against sample logs. A Kibana Elasticsearch query alert was subsequently configured and successfully tested using five synthetic failed-login events.
 
 ## 13. Testing Evidence
 
@@ -54,3 +54,17 @@ The following screenshots provide evidence of the detection testing:
 
 - `evidence/spoofing-sigma-kibana-test.png` – Failed login detection testing.
 - `evidence/spoofing-correlation-esql-test.png` – Correlation query testing in Kibana.
+### Failed Login Alert Testing
+
+The Kibana Failed Login Alert rule was tested using five synthetic failed-login events from the same source IP (`192.168.1.250`).
+
+- **Detection query:** `endpoint: "/api/login" AND status_code: 401`
+- **Data view:** `waste-logs-*`
+- **Time window:** 5 minutes
+- **Alert threshold:** Document count greater than 4
+- **Test events:** 5
+- **Initial alert document count:** 5
+- **Result:** Alert successfully generated
+- **Final alert status:** Recovered
+
+The alert was generated when the document count exceeded the configured threshold. It subsequently recovered when no matching events were found in the next evaluation window.
