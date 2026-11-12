@@ -82,4 +82,4 @@ The Kibana dashboard, **Failed Login by Source IP**, provides visibility into ke
 
 **Dashboard Screenshot:**
 
-![Kibana Security Dashboard](screenshots/kibana-dashboard.png)
+![Kibana Dashboard](assets/dashboard.png)
