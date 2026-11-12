@@ -68,3 +68,18 @@ The Kibana Failed Login Alert rule was tested using five synthetic failed-login 
 - **Final alert status:** Recovered
 
 The alert was generated when the document count exceeded the configured threshold. It subsequently recovered when no matching events were found in the next evaluation window.
+
+### Kibana Security Dashboard Evidence
+
+The Kibana dashboard, **Failed Login by Source IP**, provides visibility into key security metrics:
+
+- **Failed Login Attempts:** Counts HTTP 401 responses for `/api/login`.
+- **Failed Login Activity Over Time:** Displays failed login trends using a timestamp chart.
+- **Source IP Addresses:** Identifies the client IP addresses associated with requests.
+- **HTTP Methods and Endpoints:** Shows the request methods and accessed endpoints.
+- **HTTP Status Codes:** Helps identify failed and successful HTTP responses.
+- **Response Time:** Displays request response-time information.
+
+**Dashboard Screenshot:**
+
+![Kibana Security Dashboard](screenshots/kibana-dashboard.png)
