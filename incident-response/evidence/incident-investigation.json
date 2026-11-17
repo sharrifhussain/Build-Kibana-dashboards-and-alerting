@@ -1,0 +1,104 @@
+{
+  "took" : 2,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 5,
+      "relation" : "eq"
+    },
+    "max_score" : null,
+    "hits" : [
+      {
+        "_index" : "waste-logs-incident-test",
+        "_id" : "CAju6aEBH6Ae5gYHSk8e",
+        "_score" : null,
+        "_source" : {
+          "timestamp" : "2026-11-17T14:00:00",
+          "client_ip" : "192.168.1.50",
+          "http_method" : "POST",
+          "endpoint" : "/api/login",
+          "status_code" : 401,
+          "response_time" : 120,
+          "message" : "Simulated failed login attempt 1"
+        },
+        "sort" : [
+          1794924000000
+        ]
+      },
+      {
+        "_index" : "waste-logs-incident-test",
+        "_id" : "CQju6aEBH6Ae5gYHSk8e",
+        "_score" : null,
+        "_source" : {
+          "timestamp" : "2026-11-17T14:00:30",
+          "client_ip" : "192.168.1.50",
+          "http_method" : "POST",
+          "endpoint" : "/api/login",
+          "status_code" : 401,
+          "response_time" : 125,
+          "message" : "Simulated failed login attempt 2"
+        },
+        "sort" : [
+          1794924030000
+        ]
+      },
+      {
+        "_index" : "waste-logs-incident-test",
+        "_id" : "Cgju6aEBH6Ae5gYHSk8e",
+        "_score" : null,
+        "_source" : {
+          "timestamp" : "2026-11-17T14:01:00",
+          "client_ip" : "192.168.1.50",
+          "http_method" : "POST",
+          "endpoint" : "/api/login",
+          "status_code" : 401,
+          "response_time" : 118,
+          "message" : "Simulated failed login attempt 3"
+        },
+        "sort" : [
+          1794924060000
+        ]
+      },
+      {
+        "_index" : "waste-logs-incident-test",
+        "_id" : "Cwju6aEBH6Ae5gYHSk8e",
+        "_score" : null,
+        "_source" : {
+          "timestamp" : "2026-11-17T14:01:30",
+          "client_ip" : "192.168.1.50",
+          "http_method" : "POST",
+          "endpoint" : "/api/login",
+          "status_code" : 401,
+          "response_time" : 130,
+          "message" : "Simulated failed login attempt 4"
+        },
+        "sort" : [
+          1794924090000
+        ]
+      },
+      {
+        "_index" : "waste-logs-incident-test",
+        "_id" : "DAju6aEBH6Ae5gYHSk8e",
+        "_score" : null,
+        "_source" : {
+          "timestamp" : "2026-11-17T14:02:00",
+          "client_ip" : "192.168.1.50",
+          "http_method" : "POST",
+          "endpoint" : "/api/login",
+          "status_code" : 401,
+          "response_time" : 122,
+          "message" : "Simulated failed login attempt 5"
+        },
+        "sort" : [
+          1794924120000
+        ]
+      }
+    ]
+  }
+}
